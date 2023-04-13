@@ -1,0 +1,11 @@
+#!/bin/sh
+
+cd open5gs
+alias mongo="mongosh"
+./misc/db/open5gs-dbctl add_ue_with_apn 999850000011885 11111111111111111111111111111885 99985011111111111111111111111111 wceadmin
+./misc/db/open5gs-dbctl add_ue_with_apn 999850111116969 9831d151e3d8a0863de2052c04d81f45 80ea790a8443ccbcfbf337854b5bae8b wceinternet
+./misc/db/open5gs-dbctl add_ue_with_apn 999850111111337 9e3f86e334e2db24f417432995c92a35 348422446015cab263d005d94b4f6790 wceinternet
+./misc/db/open5gs-dbctl add_ue_with_apn 999850111110420 14daf362c531710a2d00c55eaacaeeb0 c8b3fd28c86788732157196a6fca54d2 wceinternet
+./misc/db/open5gs-dbctl add_ue_with_apn 999850111118008 75ca9d295c006909fd5a142e498f35e1 658d232978b873481721a818644d957f wceinternet
+./misc/db/open5gs-dbctl add_ue_with_apn 999850111111234 082f857d3f7a79c0231f4f5655b3669b c66378911aabadc093aee6ff4d50044a wceinternet
+./misc/db/open5gs-dbctl add_ue_with_apn 999850111118055 2643d858381248ba2940ec4bb0974dd5 bad5a6c160b23441cb32c1651cb3baf9 wceinternet
