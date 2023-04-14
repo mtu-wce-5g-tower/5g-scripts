@@ -10,50 +10,58 @@ if [ "$SYSTEM" = "Linux" ]; then
         echo "net.ipv6.conf.ogstun.disable_ipv6=0" > /etc/sysctl.d/30-open5gs.conf
         sysctl -p /etc/sysctl.d/30-open5gs.conf
     fi
-    ip addr del 100.64.0.1/10 dev ogstun 2> /dev/null
-    ip addr add 100.64.0.1/10 dev ogstun
-    ip addr del 100.64.1.2/10 dev ogstun 2> /dev/null
-    ip addr add 100.64.1.2/10 dev ogstun
-    ip addr del 100.64.2.6/10 dev ogstun 2> /dev/null
-    ip addr add 100.64.2.6/10 dev ogstun
-    ip addr del 100.64.3.5/10 dev ogstun 2> /dev/null
-    ip addr add 100.64.3.5/10 dev ogstun
-    ip addr del 100.64.4.7/10 dev ogstun 2> /dev/null
-    ip addr add 100.64.4.7/10 dev ogstun
+    ip addr del 100.64.0.2/10 dev ogstun 2> /dev/null
+    ip addr add 100.64.0.2/10 dev ogstun
+    ip addr del 100.64.1.6/10 dev ogstun 2> /dev/null
+    ip addr add 100.64.1.6/10 dev ogstun
+    ip addr del 100.64.2.5/10 dev ogstun 2> /dev/null
+    ip addr add 100.64.2.5/10 dev ogstun
+    ip addr del 100.64.3.7/10 dev ogstun 2> /dev/null
+    ip addr add 100.64.3.7/10 dev ogstun
+    ip addr del 100.64.4.1/10 dev ogstun 2> /dev/null
+    ip addr add 100.64.4.1/10 dev ogstun
+    ip addr del 100.64.5.1/10 dev ogstun 2> /dev/null
+    ip addr add 100.64.5.1/10 dev ogstun
     ip addr del 100.65.0.1/16 dev ogstun 2> /dev/null
     ip addr add 100.65.0.1/16 dev ogstun
-    ip addr del fd69:dead:cafe:0::1/48 dev ogstun 2> /dev/null
-    ip addr add fd69:dead:cafe:0::1/48 dev ogstun
-    ip addr del fd69:dead:cafe:1::2/48 dev ogstun 2> /dev/null
-    ip addr add fd69:dead:cafe:1::2/48 dev ogstun
-    ip addr del fd69:dead:cafe:2::6/48 dev ogstun 2> /dev/null
-    ip addr add fd69:dead:cafe:2::6/48 dev ogstun
-    ip addr del fd69:dead:cafe:3::5/48 dev ogstun 2> /dev/null
-    ip addr add fd69:dead:cafe:3::5/48 dev ogstun
-    ip addr del fd69:dead:cafe:4::7/48 dev ogstun 2> /dev/null
-    ip addr add fd69:dead:cafe:4::7/48 dev ogstun
+    ip addr del fd69:dead:cafe:0::2/48 dev ogstun 2> /dev/null
+    ip addr add fd69:dead:cafe:0::2/48 dev ogstun
+    ip addr del fd69:dead:cafe:1::6/48 dev ogstun 2> /dev/null
+    ip addr add fd69:dead:cafe:1::6/48 dev ogstun
+    ip addr del fd69:dead:cafe:2::5/48 dev ogstun 2> /dev/null
+    ip addr add fd69:dead:cafe:2::5/48 dev ogstun
+    ip addr del fd69:dead:cafe:3::7/48 dev ogstun 2> /dev/null
+    ip addr add fd69:dead:cafe:3::7/48 dev ogstun
+    ip addr del fd69:dead:cafe:4::1/48 dev ogstun 2> /dev/null
+    ip addr add fd69:dead:cafe:4::1/48 dev ogstun
+    ip addr del fd69:dead:cafe:5::1/48 dev ogstun 2> /dev/null
+    ip addr add fd69:dead:cafe:5::1/48 dev ogstun
     ip addr del fd69:dead:cafe:100::1/56 dev ogstun 2> /dev/null
     ip addr add fd69:dead:cafe:100::1/56 dev ogstun
-    ip addr del 100.64.128.1/10 dev ogstun 2> /dev/null
-    ip addr add 100.64.128.1/10 dev ogstun
-    ip addr del 100.64.129.2/10 dev ogstun 2> /dev/null
-    ip addr add 100.64.129.2/10 dev ogstun
-    ip addr del 100.64.130.6/10 dev ogstun 2> /dev/null
-    ip addr add 100.64.130.6/10 dev ogstun
-    ip addr del 100.64.131.5/10 dev ogstun 2> /dev/null
-    ip addr add 100.64.131.5/10 dev ogstun
-    ip addr del 100.64.132.7/10 dev ogstun 2> /dev/null
-    ip addr add 100.64.132.7/10 dev ogstun
-    ip addr del fd69:dead:cafe:80::1/48 dev ogstun 2> /dev/null
-    ip addr add fd69:dead:cafe:80::1/48 dev ogstun
-    ip addr del fd69:dead:cafe:81::2/48 dev ogstun 2> /dev/null
-    ip addr add fd69:dead:cafe:81::2/48 dev ogstun
-    ip addr del fd69:dead:cafe:82::6/48 dev ogstun 2> /dev/null
-    ip addr add fd69:dead:cafe:82::6/48 dev ogstun
-    ip addr del fd69:dead:cafe:83::5/48 dev ogstun 2> /dev/null
-    ip addr add fd69:dead:cafe:83::5/48 dev ogstun
-    ip addr del fd69:dead:cafe:84::7/48 dev ogstun 2> /dev/null
-    ip addr add fd69:dead:cafe:84::7/48 dev ogstun
+    ip addr del 100.64.128.2/10 dev ogstun 2> /dev/null
+    ip addr add 100.64.128.2/10 dev ogstun
+    ip addr del 100.64.129.6/10 dev ogstun 2> /dev/null
+    ip addr add 100.64.129.6/10 dev ogstun
+    ip addr del 100.64.130.5/10 dev ogstun 2> /dev/null
+    ip addr add 100.64.130.5/10 dev ogstun
+    ip addr del 100.64.131.7/10 dev ogstun 2> /dev/null
+    ip addr add 100.64.131.7/10 dev ogstun
+    ip addr del 100.64.132.1/10 dev ogstun 2> /dev/null
+    ip addr add 100.64.132.1/10 dev ogstun
+    ip addr del 100.64.133.1/10 dev ogstun 2> /dev/null
+    ip addr add 100.64.133.1/10 dev ogstun
+    ip addr del fd69:dead:cafe:80::2/48 dev ogstun 2> /dev/null
+    ip addr add fd69:dead:cafe:80::2/48 dev ogstun
+    ip addr del fd69:dead:cafe:81::6/48 dev ogstun 2> /dev/null
+    ip addr add fd69:dead:cafe:81::6/48 dev ogstun
+    ip addr del fd69:dead:cafe:82::5/48 dev ogstun 2> /dev/null
+    ip addr add fd69:dead:cafe:82::5/48 dev ogstun
+    ip addr del fd69:dead:cafe:83::7/48 dev ogstun 2> /dev/null
+    ip addr add fd69:dead:cafe:83::7/48 dev ogstun
+    ip addr del fd69:dead:cafe:84::1/48 dev ogstun 2> /dev/null
+    ip addr add fd69:dead:cafe:84::1/48 dev ogstun
+    ip addr del fd69:dead:cafe:85::1/48 dev ogstun 2> /dev/null
+    ip addr add fd69:dead:cafe:85::1/48 dev ogstun
 
     ip link set ogstun up
     sysctl -w net.ipv4.ip_forward=1
